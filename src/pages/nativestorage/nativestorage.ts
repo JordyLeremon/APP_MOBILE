@@ -3,6 +3,7 @@ import { NavController, AlertController } from 'ionic-angular';
 
 // Native components
 import { NativeStorage } from '@ionic-native/native-storage';
+import { NewsPage } from '../news/news';
 
 @Component({
   selector: 'page-nativestorage',
@@ -10,6 +11,7 @@ import { NativeStorage } from '@ionic-native/native-storage';
 })
 export class NativestoragePage {
 
+  nextPage = NewsPage;
   name: string;
   surname: string;
   years: number;

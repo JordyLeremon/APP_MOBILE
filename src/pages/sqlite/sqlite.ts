@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
+import { NativestoragePage } from '../nativestorage/nativestorage'; 
 
 /**
  * Generated class for the SqlitePage page.
@@ -17,6 +18,8 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 })
 export class SqlitePage {
 
+
+  nextPage = NativestoragePage;
   private db: SQLiteObject;
   romans: string[] = [];
   titleRoman: string;

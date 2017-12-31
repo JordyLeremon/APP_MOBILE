@@ -46,6 +46,7 @@ import { IonicStorageModule } from '@ionic/storage';
     SplashScreen,
     SqlitePage,
     SQLite,
+    NativeStorage,
     NativestoragePage,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
