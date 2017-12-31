@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
+import { NewsPage } from '../news/news';
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
-import { HomePage } from '../home/home';
+import { SqlitePage } from '../sqlite/sqlite';
+import { NativeStorage } from '@ionic-native/native-storage';
+import { NativestoragePage } from '../nativestorage/nativestorage';
 
 @Component({
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab1Root = SqlitePage;
+  tab2Root = NativestoragePage;
+  tab3Root = NewsPage;
+  
 
   constructor() {
 

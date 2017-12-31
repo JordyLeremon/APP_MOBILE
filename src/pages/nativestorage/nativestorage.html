@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Native Storage</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Permet de stocker des préférences (données relativement légères)</p>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Nom</ion-label>
+      <ion-input type="text" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Surnom</ion-label>
+      <ion-input type="text" [(ngModel)]="surname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Année</ion-label>
+      <ion-input type="text" [(ngModel)]="years"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button clear (tap)="storeIdentity()">Sauvegarder ma carte !!</button>
+  <button ion-button clear (tap)="getMyName()">Quel est mon nom ?</button>
+
+</ion-content>
